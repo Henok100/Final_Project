@@ -19,24 +19,52 @@ def button_click(number):
 def button_clear():
     e.delete(0, END)
 
-def button_add():
-    first_number = e.get()
-    global first_num
-    first_num = int(first_number)
-    e.delete(0, END)
-
 def button_equal():
     second_number = e.get()
     e.delete(0, END)
-    e.insert(0, first_num + int(second_number))
+
+    if math == 'addition':
+        e.insert(0, first_num + int(second_number))
+    elif math == 'subtraction':
+        e.insert(0, first_num - int(second_number))
+    elif math == 'multiplication':
+        e.insert(0, first_num * int(second_number))
+    elif math == 'division':
+        e.insert(0, first_num / int(second_number))
+
+def button_add():
+    first_number = e.get()
+    global first_num
+    global math
+    math = "addition"
+    first_num = int(first_number)
+    e.delete(0, END)
 
 def button_subtract():
+    first_number = e.get()
+    global first_num
+    global math
+    math = "subtraction"
+    first_num = int(first_number)
+    e.delete(0, END)
     return
 
 def button_multiply():
+    first_number = e.get()
+    global first_num
+    global math
+    math = "multiplication"
+    first_num = int(first_number)
+    e.delete(0, END)
     return
 
 def button_divide():
+    first_number = e.get()
+    global first_num
+    global math
+    math = "division"
+    first_num = int(first_number)
+    e.delete(0, END)
     return
 
 # Define buttons
@@ -54,9 +82,9 @@ button_add = Button(root, text="+", padx=39, pady=20, command=button_add)
 button_equal = Button(root, text="=", padx=91, pady=20, command=button_equal)
 button_clear = Button(root, text="Clear", padx=79, pady=20, command=button_clear)
 
-button_subtract = Button(root, text="-", padx=39, pady=20, command=button_subtract)
-button_multiply = Button(root, text="*", padx=39, pady=20, command=button_multiply)
-button_divide = Button(root, text="/", padx=39, pady=20, command=button_divide)
+button_subtract = Button(root, text="-", padx=41, pady=20, command=button_subtract)
+button_multiply = Button(root, text="*", padx=41, pady=20, command=button_multiply)
+button_divide = Button(root, text="/", padx=41, pady=20, command=button_divide)
 
 
 # Put the buttons on the screen
