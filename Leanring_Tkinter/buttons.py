@@ -11,5 +11,5 @@ def myClick():
 myButton = Button(root, text='Click Me!', command=myClick, fg='blue', bg='yellow')
 myButton.pack()
 
-# Enter the Tkinter event loop to keep the window open and responsive
+# Enter the Tkinter event loop to keep the window open and responsive yes
 root.mainloop() 
