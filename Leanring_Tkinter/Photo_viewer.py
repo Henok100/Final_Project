@@ -3,7 +3,7 @@ from PIL import ImageTk, Image
 
 root = Tk()
 root.title('Learning Icons')
-root.iconbitmap('Leanring_Tkinter\ethiopia.ico')
+# root.iconbitmap('Leanring_Tkinter\ethiopia.ico')
 
 my_img = ImageTk.PhotoImage(Image.open("Images/aspen.png"))
 my_img_1 = ImageTk.PhotoImage(Image.open("Images/aspen2.png"))
