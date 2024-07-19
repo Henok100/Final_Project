@@ -3,15 +3,11 @@ from PIL import ImageTk, Image
 
 root = Tk()
 root.title('Learning Icons')
-root.iconbitmap('Leanring_Tkinter/ethiopia.ico')
+root.iconbitmap('/home/henokg/Desktop/Tkinter/Final_Project/Learning_Tkinter/ethiopia.ico')
 
 my_img = ImageTk.PhotoImage(Image.open("Images/aspen.png"))
 my_label = Label(image=my_img)
 my_label.pack()
-
-
-
-
 
 
 
